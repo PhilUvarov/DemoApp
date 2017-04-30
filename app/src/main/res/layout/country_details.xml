@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:background="@color/colorPrimaryDark"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flag"
+        android:padding="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="27sp"
+        tools:text="Sweden"/>
+
+
+    <TextView
+        android:id="@+id/population_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:padding="16dp"
+        android:text="@string/population"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/population_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@id/population_title"
+        android:padding="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size"
+        tools:text="10,034,400"/>
+
+
+    <TextView
+        android:id="@+id/capital_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/population_title"
+        android:padding="16dp"
+        android:text="@string/capital"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:id="@+id/capital_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/population_title"
+        android:layout_toRightOf="@+id/capital_title"
+        android:padding="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size"
+        tools:text="Stockholm"/>
+
+</RelativeLayout>
